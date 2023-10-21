@@ -6,12 +6,13 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.post("/", function (req, res) {
-  var body = req.body;
+  const body = req.body;
 
-  console.log(body);
+  // console.log(body);
 
   res.json({
     message: "ok got it!",
+    body,
   });
 });
 
